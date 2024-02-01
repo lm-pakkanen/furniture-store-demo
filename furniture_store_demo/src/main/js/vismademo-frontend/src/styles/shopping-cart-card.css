@@ -1,0 +1,13 @@
+.shopping-cart-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-main);
+  gap: var(--spacing-main) 0;
+  background: var(--background-main);
+  box-shadow: var(--box-shadow-main);
+}
+
+.shopping-cart-card-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}

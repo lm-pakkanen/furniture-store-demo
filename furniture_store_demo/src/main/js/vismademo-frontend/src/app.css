@@ -1,0 +1,87 @@
+@import url("./reset.css");
+
+:root {
+  --spacing-xl: 2rem;
+  --spacing-lg: 1.5rem;
+  --spacing-main: 1rem;
+  --spacing-m: 0.75rem;
+  --spacing-sm: 0.5rem;
+  --spacing-xs: 0.25rem;
+
+  --background-lighter: #3d3e4d;
+  --background-main: #343541;
+  --background-darker: #2c2d36;
+
+  --font-size-heading1: 1.5rem;
+  --font-size-heading2: 1.25rem;
+  --font-size-heading3: 1.125rem;
+  --font-size-main: 1rem;
+  --font-size-caption: 0.875rem;
+
+  --box-shadow-main: 0 0 0.25rem rgba(0, 0, 0, 0.4);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  height: 100lvh;
+  width: 100lvw;
+  box-sizing: border-box;
+}
+
+.layout-children {
+  display: flex;
+  padding: var(--spacing-main);
+  background: var(--background-main);
+  flex: 1;
+}
+
+.custom-button {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: var(--font-size-heading3);
+  box-shadow: var(--box-shadow-main);
+}
+
+.custom-button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.custom-button.custom-button-main {
+  background: var(--background-main);
+}
+
+.custom-button.custom-button-darker {
+  background: var(--background-darker);
+}
+
+.custom-button.custom-button-main:not(:disabled):hover {
+  background: var(--background-lighter);
+}
+
+.custom-button.custom-button-darker:not(:disabled):hover {
+  background: var(--background-main);
+}
+
+/**
+ * Note: not complete styling, does not take into account browser native elements 
+ * inside inputs, e.g. number input -> increment/decrement buttons
+ */
+.custom-input {
+  padding: var(--spacing-sm);
+  background: var(--background-main);
+  color: white;
+  border: none;
+  box-shadow: var(--box-shadow-main);
+}

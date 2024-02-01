@@ -1,0 +1,7 @@
+.index-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: var(--spacing-main);
+}
