@@ -19,10 +19,6 @@ h2 database interface available at http://localhost:8080/h2-console (url: `jdbc:
 Run `npm run dev` while in the `src/main/js/furniture-store-demo-frontend/` directory.
 Port: 5173.
 
-## Architecture
-
-Fairly standard MVC architecture with CRUD endpoints for the frontend.
-
 ## Design choices
 
 ### Controllers
